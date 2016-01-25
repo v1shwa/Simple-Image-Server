@@ -1,0 +1,15 @@
+server {
+        listen 9090;
+        server_name 0.0.0.0;
+
+        location /images/ {
+            try_files $uri @resize;
+            expires 7d;
+            add_header Cache-Control "public";
+        }
+
+        location @resize {
+            include uwsgi_params;
+            uwsgi_pass unix:/var/run/imgsrv.sock;
+        }
+}
