@@ -25,7 +25,6 @@ common_img_types = {
     'pict' : 'image/pict',
     'pgm'  : 'image/x-portable-graymap',
     'pbm'  : 'image/x-portable-bitmap',
-    'pgm'  : 'image/x-portable-graymap',
     'pnm'  : 'image/x-portable-anymap',
     'ppm'  : 'image/x-portable-pixmap',
     'ras'  : 'image/x-cmu-raster',
