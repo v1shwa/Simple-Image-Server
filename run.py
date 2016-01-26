@@ -2,7 +2,7 @@ from ImageServer import ImageServer,ImageServerException
 
 def application(env, start_response):
     uri = env['REQUEST_URI']
-    im = ImageServer('config.ini')
+    im = ImageServer('imageserver.ini')
 
     try:
         image = im.resize(uri)
