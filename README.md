@@ -4,7 +4,9 @@ This is a dead simple image resizing server written using python's Pillow, uwsgi
 
 Image cropping & quality modification are initially done using Pillow, once the modified image is cached, it will be served directly from the file system by nginx to increase the speed.
 
-Any  suggestions/contributions are appreciated.
+Any suggestions/contributions are appreciated.
+
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/321aad34827d478d94a2e1d023f26de6)](https://www.codacy.com/app/v1shwa/Simple-Image-Server)
 
 ## Requirements
 
